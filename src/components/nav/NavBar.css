@@ -1,0 +1,27 @@
+.nav {
+    display: flex;
+    justify-content: left;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .nav-item {
+    list-style-type: none;
+    position: relative;
+  }
+  
+  .nav-link {
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+
+  
+  .navbar__logout {
+    margin-left: auto;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: #fff9f9;
+  }

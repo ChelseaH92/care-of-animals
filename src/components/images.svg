@@ -1,0 +1,3 @@
+<!-- import logo from "../images/LogoImage.png"
+then when you need to use that img plus the variable as the src
+<img src={logo} /> -->
