@@ -39,6 +39,8 @@ export const ApplicationViews = () => {
               <h4>Why Does This Page Exist?</h4>
               <div>Take care of your damn animals</div>
               <div className="images-container"></div>
+              <br />
+              <AnimalDropdown />
             </>
             
           }
@@ -48,8 +50,6 @@ export const ApplicationViews = () => {
           <Route path="/felines" element={<FelineList />} />
           <Route path="/canines" element={<CanineList />} />
           <Route path="/reptiles" element={<ReptileList />} />
-          <Route path="/" element={<AnimalDropdown />} />
-
           <Route path="/suggestions" element={<SuggestionBox />} />
           <Route path="/account" element={<Account />} />
 
