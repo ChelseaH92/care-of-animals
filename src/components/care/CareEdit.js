@@ -1,4 +1,3 @@
-// CareEdit.js
 import React, { useState } from "react";
 
 const CareEdit = ({ care, onSave }) => {
@@ -22,7 +21,7 @@ const CareEdit = ({ care, onSave }) => {
         value={editedCare.descrip}
         onChange={handleInputChange}
       />
-      {/* Add other fields for vet, diet, play, extra */}
+      {/* Add the rest 'vet, diet, play, extra' later */}
       <button onClick={handleSave}>Save</button>
     </div>
   );

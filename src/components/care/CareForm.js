@@ -1,4 +1,3 @@
-// CareForm.js
 import React, { useState } from "react";
 
 const CareForm = ({ onSave }) => {
@@ -35,7 +34,7 @@ const CareForm = ({ onSave }) => {
         value={newCare.descrip}
         onChange={handleInputChange}
       />
-      {/* Add other fields for vet, diet, play, extra */}
+      {/* Add the rest 'vet, diet, play, extra' later */}
       <button onClick={handleSave}>Save</button>
     </div>
   );

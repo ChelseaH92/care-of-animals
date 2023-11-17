@@ -2,9 +2,10 @@ import React, { useState } from "react"
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom"
 import "./Login.css"
+// import './RegisterButton.css';
 
 export const Login = () => {
-    const [email, set] = useState("hpassfield7@netvibes.com")
+    const [email, set] = useState("")
     const navigate = useNavigate()
 
     const handleLogin = (e) => {
@@ -34,7 +35,7 @@ export const Login = () => {
             <section>
                 <form className="form--login" onSubmit={handleLogin}>
                     <h1>For the Care of Animals</h1>
-                    <h2>Please sign in</h2>
+                    <h2>Please Sign in or Register</h2>
                     <fieldset>
                         <label htmlFor="inputEmail"> Email address </label>
                         <input type="email"
@@ -43,6 +44,13 @@ export const Login = () => {
                             className="form-control"
                             placeholder="Email address"
                             required autoFocus />
+                        {/* <label htmlFor="inputPassword"> Password </label>
+                        <input type="password"
+                            value={password}
+                            onChange={e => set(e.target.value)}
+                            className="form-control"
+                            placeholder="Password"
+                            required autoFocus /> */}
                     </fieldset>
                     <fieldset>
                         <button type="submit">
@@ -52,7 +60,7 @@ export const Login = () => {
                 </form>
             </section>
             <section className="link--register">
-                <Link to="/register">Not a member yet?</Link>
+                <Link to="/register" className="register-button">Not a member yet?</Link>
             </section>
         </main>
     )

@@ -9,14 +9,16 @@ const SuggestionBox = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // You can handle the suggestion submission logic here
+    
     console.log('Suggestion submitted:', suggestion);
-    // You may want to send the suggestion to a server, update state, etc.
+    
     setSuggestion('');
   };
 
+  const login_user = JSON.parse(localStorage.getItem("login_user"));
+
   return (
-    <div>
+    <div class="box">
       <h2>Suggestion Box</h2>
       <form onSubmit={handleSubmit}>
         <label>
@@ -28,6 +30,8 @@ const SuggestionBox = () => {
           />
         </label>
         <button type="submit">Submit</button>
+        <br />
+        <label>Please give us your suggestions for animals you would like to see listed on this site</label>
       </form>
     </div>
   );

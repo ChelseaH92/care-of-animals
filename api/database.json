@@ -1,60 +1,60 @@
 {
-    "users": [
-      {
-        "id": 1,
-        "fullName": "The Incorrect Vet",
-        "email": "TortoisesEatChicken@wrong.org",
-        "password": "IncorrectAdvice123",
-        "isAdmin": false
-      },
-      {
-        "id": 2,
-        "fullName": "Curious Betty",
-        "email": "WeWantToLearn@curious.com",
-        "password": "16956",
-        "isAdmin": false
-      },
-      {
-        "id": 3,
-        "fullName": "Chelsea, the Irritated Tortoise Owner",
-        "email": "TortoisesAreHerbavores@facts.org",
-        "password": "TortsEatVeg23",
-        "isAdmin": true
-      },
-      {
-        "id": 4,
-        "fullName": "Truth Seeker",
-        "email": "FactsOverFiction@truth.com",
-        "password": "12345",
-        "isAdmin": true
-      }
-    ],
-    "admin": [
-      {
-        "id": 1,
-        "userId": 3
-      },
-      {
-        "id": 2,
-        "userId": 4
-      }
-    ],
-    "animals": [
-        {
-            "id": 1,
-            "name": "Furry Dogs"
-        },
-        {
-            "id": 2,
-            "name": "Furry Cats"
-        },
-        {
-            "id": 3,
-            "name": "Russian Tortoises"
-        }
-    ],
-    "care": [
-     {
+  "users": [
+    {
+      "id": 1,
+      "fullName": "The Incorrect Vet",
+      "email": "TortoisesEatChicken@wrong.org",
+      "password": "IncorrectAdvice123",
+      "isAdmin": false
+    },
+    {
+      "id": 2,
+      "fullName": "Curious Betty",
+      "email": "WeWantToLearn@curious.com",
+      "password": "16956",
+      "isAdmin": false
+    },
+    {
+      "id": 3,
+      "fullName": "Chelsea, the Irritated Tortoise Owner",
+      "email": "TortoisesAreHerbavores@facts.org",
+      "password": "TortsEatVeg23",
+      "isAdmin": true
+    },
+    {
+      "id": 4,
+      "fullName": "Truth Seeker",
+      "email": "FactsOverFiction@truth.com",
+      "password": "12345",
+      "isAdmin": true
+    }
+  ],
+  "admin": [
+    {
+      "id": 1,
+      "userId": 3
+    },
+    {
+      "id": 2,
+      "userId": 4
+    }
+  ],
+  "animals": [
+    {
+      "id": 1,
+      "name": "Furry Dogs"
+    },
+    {
+      "id": 2,
+      "name": "Furry Cats"
+    },
+    {
+      "id": 3,
+      "name": "Russian Tortoises"
+    }
+  ],
+  "cares": [
+    {
       "id": 1,
       "animalId": 1,
       "descrip": "A brief overview of all furry canines. They are omnivores who are considered 'human's best friend'.",
@@ -62,8 +62,8 @@
       "diet": "Depending on owner's budget and level of boujee, dogs can have their own homecooked meals with a balance of grains, vegetables, and raw or cooked meat or bags of non-grainfree food from a pet store. When choosing a food, it is important to look at the ingredients and to research which food will benefit the dog the most.",
       "play": "Depending on the breed, some dogs will need more exercise from others. Chihuahuas are more likely to need couch cuddles while Huskies need as much exercise as possible to get their energy out. Training is also a must for every breed for both good manners around other dogs and humans and for mental stimulation.",
       "extra": "While some grainfree dog food contains taurine ['a non-proteinogenic amino sulfonic acid that is widely distributed in animal tissues'] and other nutrients, most are considered to be the cause of dilated cardiomyopathy [enlarged heart] in dogs. It is also important to make sure that owners double check what [human] foods are safe for dogs to ingest."
-     },
-     {
+    },
+    {
       "id": 2,
       "animalId": 2,
       "descrip": "A brief overview of all furry felines. They are carnivores who are considered aloof by some, though most cat owners will notice that cats are magically in the same as their owner near constantly.",
@@ -71,8 +71,8 @@
       "diet": "Depending on owner's budget and level of boujee, cats benefit most from a can of wet food, semi-moist food, or bags of food from a pet store. Wet food is the most expensive, but the most beneficial at a 75% moisture content. Always check the nutrition on any food you are considering feeding your cat.",
       "play": "Depending on chonk status, most cats enjoy a laser pointer and a stick with a feather on the end. For more hefty cats, they may need more exercise in their daily lives.",
       "extra": "Though a controversial subject amongst cat owners, it is encouraged for cats to remain indoors to keep the local ecosystem balanced and for the cat's health [i.e. to not get into deadly fights with other animals or run over by a car]. Choosing a litter for the cat's litter box is also an important factor in caring for your cat."
-     },
-     {
+    },
+    {
       "id": 3,
       "animalId": 3,
       "descrip": "A brief overview of Russian Tortoises. They are reptiles with a surprising amount of personality and the world's second smallest species of tortoise.",
@@ -80,6 +80,6 @@
       "diet": "Russian Tortoises benefit most from homegrown plants and weeds, though a diet of store-bought mix of greens and weeds are okay if there is a varied mix and the tortoise is given a different mix each day. Sprinkling powdered calcium onto the greens is important to keep their shell healthy and to keep their calcium levels at a safe level as they are prone to calcium deficiency.",
       "play": "Russian Tortoises don't exactly need 'playtime', but weekly soaks to keep their shell and skin healthy, give them an extra source of water to ingest, and promote bowel movements are recommended. Be sure to pay attention to the tortoise and where the water level is as they cannot save themselves if they somehow turn over on their back or submerge themselves.",
       "extra": "It's important to note that tortoises vary vastly by species. A Box Turtle or a Red-Footed Tortoise will have very different dietary needs than a Russian Tortoise. A wooden, moisture-resistant box with a screen lid is recommended for their enclosure as well as UV lights and warming lights to keep one side at 90 to 100 degrees fahrenheit and the other side cool."
-     }
-    ]
-  }
+    }
+  ]
+}
