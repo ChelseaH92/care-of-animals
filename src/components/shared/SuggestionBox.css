@@ -22,6 +22,7 @@
     text-align: center;
     color: #333;
     font-weight: bold;
+    font-size: x-large;
   }
 
   .admin-suggestions h3 {
@@ -76,14 +77,14 @@
   }
 
   .approve-btn {
-      background-color: #333;
-      color: #bbffe3;
+      background-color: #00ab66;
+      color: #fff;
       border-radius: 8px;
   }
 
   .deny-btn {
-    background-color: #333;
-    color: #bbffe3;
+    background-color: #cc0202;
+    color: #fff;
     border-radius: 8px;
 }
   

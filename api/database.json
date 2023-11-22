@@ -57,20 +57,20 @@
     {
       "id": 1,
       "animalId": 1,
-      "descrip": "A brief overview of all furry canines. They are omnivores who are considered 'human's best friend'",
+      "descrip": "A brief overview of all furry canines. They are omnivores [with carnivorous tendencies] who are considered 'human's best friend'",
       "vet": "Vet visits are recommended at least once a year for annual check-ups, plus additional visits depending on each dog's individual health needs and emergencies.",
-      "diet": "Depending on owner's budget and level of boujee, dogs can have their own homecooked meals with a balance of grains, vegetables, and raw or cooked meat or bags of non-grainfree food from a pet store. When choosing a food, it is important to look at the ingredients and to research which food will benefit the dog the most.",
+      "diet": "Depending on the owner's budget and level of boujee, dogs can have their own homecooked meals with a balance of grains, vegetables, and raw or cooked meat or bags of non-grainfree food from a pet store. When choosing a food, it is important to look at the ingredients and to research which food will benefit the dog the most, taking into account factors like age and breed.",
       "play": "Depending on the breed, some dogs will need more exercise from others. Chihuahuas are more likely to need couch cuddles while Huskies need as much exercise as possible to get their energy out. Training is also a must for every breed for both good manners around other dogs and humans and for mental stimulation.",
-      "extra": "While some grainfree dog food contains taurine ['a non-proteinogenic amino sulfonic acid that is widely distributed in animal tissues'] and other nutrients, most are considered to be the cause of dilated cardiomyopathy [enlarged heart] in dogs. It is also important to make sure that owners double check what [human] foods are safe for dogs to ingest."
+      "extra": "While some grain-free dog food contains taurine ['a non-proteinogenic amino sulfonic acid that is widely distributed in animal tissues'] and other nutrients, most are considered to be the cause of dilated cardiomyopathy [enlarged heart] in dogs. It is also important to make sure that owners double check what [human] foods are safe for dogs to ingest."
     },
     {
       "id": 2,
       "animalId": 2,
-      "descrip": "A brief overview of all furry felines. They are carnivores who are considered aloof by some, though most cat owners will notice that cats are magically in the same as their owner near constantly.",
+      "descrip": "A brief overview of all furry felines. They are carnivores who are considered aloof by some, though most cat owners will notice that cats are magically in the same room as their owner near constantly.",
       "vet": "Vet visits are recommended at least once a year for annual check-ups, plus additional visits depending on each cat's individual health needs and emergencies.",
       "diet": "Depending on owner's budget and level of boujee, cats benefit most from a can of wet food, semi-moist food, or bags of food from a pet store. Wet food is the most expensive, but the most beneficial at a 75% moisture content. Always check the nutrition on any food you are considering feeding your cat.",
       "play": "Depending on chonk status, most cats enjoy a laser pointer and a stick with a feather on the end. For more hefty cats, they may need more exercise in their daily lives.",
-      "extra": "Though a controversial subject amongst cat owners, it is encouraged for cats to remain indoors to keep the local ecosystem balanced and for the cat's health [i.e. to not get into deadly fights with other animals or run over by a car]. Choosing a litter for the cat's litter box is also an important factor in caring for your cat."
+      "extra": "Though a controversial subject amongst cat owners, it is encouraged for cats to remain indoors (unless on a leash and harness or in a 'catio') to keep the local ecosystem balanced and for the cat's health [i.e. to not get into deadly fights with other animals or run over by a car]. Choosing a litter for the cat's litter box is also an important factor in caring for your cat."
     },
     {
       "id": 3,
@@ -78,8 +78,8 @@
       "descrip": "A brief overview of Russian Tortoises. They are reptiles with a surprising amount of personality and the world's second smallest species of tortoise.",
       "vet": "Depending on the owner's area, vet visits are recommended once a year. It is important to 'vet out' your local veterinarian and make sure they are qualified to give you the best advice for the tortoise.",
       "diet": "Russian Tortoises benefit most from homegrown plants and weeds, though a diet of store-bought mix of greens and weeds are okay if there is a varied mix and the tortoise is given a different mix each day. Sprinkling powdered calcium onto the greens is important to keep their shell healthy and to keep their calcium levels at a safe level as they are prone to calcium deficiency.",
-      "play": "Russian Tortoises don't exactly need 'playtime', but weekly soaks to keep their shell and skin healthy, give them an extra source of water to ingest, and promote bowel movements are recommended. Be sure to pay attention to the tortoise and where the water level is as they cannot save themselves if they somehow turn over on their back or submerge themselves.",
-      "extra": "It's important to note that tortoises vary vastly by species. A Box Turtle or a Red-Footed Tortoise will have very different dietary needs than a Russian Tortoise. A wooden, moisture-resistant box with a screen lid is recommended for their enclosure as well as UV lights and warming lights to keep one side at 90 to 100 degrees fahrenheit and the other side cool."
+      "play": "Russian Tortoises don't exactly need 'playtime', but weekly soaks are recommended to keep their shell and skin healthy, give them an extra source of water to ingest, and promote bowel movements. Be sure to pay attention to the tortoise and where the water level is as they cannot save themselves if they somehow turn over on their back or submerge themselves.",
+      "extra": "It's important to note that all tortoises vary vastly by species. A Box Turtle or a Red-Footed Tortoise will have very different dietary needs than a Russian Tortoise. A wooden, moisture-resistant box with a screen lid is recommended for their enclosure as well as UV lights and warming lights to keep one side at 90 to 100 degrees fahrenheit and the other side cool."
     }
   ],
   "suggestions": []
