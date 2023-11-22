@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import "./Account.css"
 
 export const Account = () => {
     const [userData, setUserData] = useState(null);
@@ -18,10 +19,10 @@ export const Account = () => {
   
     return (
         userData ?
-            <div>
+            <div className="account-card">
             <h1>User Account Page</h1>
-            <h2>Name: {userData.fullName}</h2>
-            <p>Email: {userData.email}</p>
+            <h2><span className='name-card'>Name:</span> {userData.fullName}</h2>
+            <p><span className='email-card'>Email:</span> {userData.email}</p>
             <div>
             </div>
           </div>

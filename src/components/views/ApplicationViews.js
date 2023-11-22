@@ -1,59 +1,44 @@
-// import { UserViews } from "./UserViews"
-// import { AdminViews } from "./AdminViews"
-
-// export const ApplicationViews = () => {
-
-//     const localUser = localStorage.getItem("login_user")
-//     const localUserObject = JSON.parse(localUser)
-
-//     if (localUserObject.isAdmin) {
-//         return <AdminViews />
-//     }
-//     else {
-//         return <UserViews />
-//     }
-// }
-
-import { Outlet, Route, Routes } from "react-router-dom"
+import { Outlet, Route, Routes } from "react-router-dom";
 import { AnimalForm } from "../animals/AnimalForm";
 import { AnimalList } from "../animals/AnimalList";
-import  AnimalDropdown from "../animals/AnimalDropdown";
+import AnimalDropdown from "../animals/AnimalDropdown";
 import SuggestionBox from "../shared/SuggestionBox";
 import { Account } from "../auth/Account";
 import { FelineList } from "../animals/FelineList";
 import { CanineList } from "../animals/CanineList";
 import { ReptileList } from "../animals/ReptileList";
+import "./ApplicationViews.css";
 
 export const ApplicationViews = () => {
-    return (
-      <Routes>
-        <Route
-        path="/"
-        element={<Outlet />}
-        >  
-        <Route
-          path="/home"
-          element={
-            <>
-              <h1 className="title--main">For the Care of Animals</h1>
-              <h4>Why Does This Page Exist?</h4>
-              <div>Take care of your damn animals</div>
-              <div className="images-container"></div>
-              <br />
-              <AnimalDropdown />
-            </>
-            
-          }
-        />
-          <Route path="animals/create" element={ <AnimalForm /> } />
-          <Route path="/animals/" element={<AnimalList/>} />
-          <Route path="/felines" element={<FelineList />} />
-          <Route path="/canines" element={<CanineList />} />
-          <Route path="/reptiles" element={<ReptileList />} />
-          <Route path="/suggestions" element={<SuggestionBox />} />
-          <Route path="/account" element={<Account />} />
+  const commonHomeContent = (
+    <div className="home-container">
+      <div className="home-content">
+        <h1 className="title--main">For the Care of Animals</h1>
+        <h4 className="second-title">Why Does This Page Exist?</h4>
+        <br />
+        <div>
+          This site exists for those who are considering adopting a new member of the family and aren't sure what their care would look like, those curious about animals in general, and anyone who considers themselves an animal lover. Finding accurate advice about an animal's care can be frustrating and incredibly time-consuming. The goal of this page is to take the guess-work out of what is and isn't good care information for your current or future pets.
+        </div>
+        <br />
+        <AnimalDropdown />
+      </div>
+      <div className="image-container">
+        <img src="https://demo.phlox.pro/pet-shop/wp-content/uploads/sites/111/2019/06/group-of-pets-dog-cat-bird-reptile-rabbit-PVJ6BHU.png" alt="Animal Care" />
+      </div>
+    </div>
+  );
 
-        </Route>
-      </Routes>
-    );
-  };
+  return (
+    <Routes>
+      <Route path="/" element={commonHomeContent} />
+      <Route path="/home" element={commonHomeContent} />
+      <Route path="animals/create" element={<AnimalForm />} />
+      <Route path="/animals/" element={<AnimalList />} />
+      <Route path="/felines" element={<FelineList />} />
+      <Route path="/canines" element={<CanineList />} />
+      <Route path="/reptiles" element={<ReptileList />} />
+      <Route path="/suggestions" element={<SuggestionBox />} />
+      <Route path="/account" element={<Account />} />
+    </Routes>
+  );
+};

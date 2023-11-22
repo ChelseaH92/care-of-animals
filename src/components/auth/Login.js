@@ -2,7 +2,6 @@ import React, { useState } from "react"
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom"
 import "./Login.css"
-// import './RegisterButton.css';
 
 export const Login = () => {
     const [email, set] = useState("")
@@ -35,7 +34,8 @@ export const Login = () => {
             <section>
                 <form className="form--login" onSubmit={handleLogin}>
                     <h1>For the Care of Animals</h1>
-                    <h2>Please Sign in or Register</h2>
+                    <br />
+                    <h2><b>Please Sign in or Register</b></h2>
                     <fieldset>
                         <label htmlFor="inputEmail"> Email address </label>
                         <input type="email"

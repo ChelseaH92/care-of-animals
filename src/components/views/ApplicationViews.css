@@ -1,0 +1,38 @@
+body
+{ 
+    position:absolute; 
+    height:175%; 
+    width:100%;
+    min-height: 100vh;
+    background-color: #a2ffd9;
+    margin: 0px 0 0 0;
+    width: 100%;
+}
+
+.title--main {
+  font-size: 4vw;
+}
+
+.second-title {
+  font-size: xx-large;
+}
+
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px; 
+}
+
+.home-content {
+  max-width: 70%; 
+}
+
+.image-container {
+  flex-shrink: 0; 
+}
+
+.image-container img {
+  width: 900px; 
+  height: auto;
+}

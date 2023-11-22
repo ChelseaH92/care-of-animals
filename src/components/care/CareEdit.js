@@ -21,7 +21,7 @@ const CareEdit = ({ care, onSave }) => {
         value={editedCare.descrip}
         onChange={handleInputChange}
       />
-      {/* Add the rest 'vet, diet, play, extra' later */}
+   
       <button onClick={handleSave}>Save</button>
     </div>
   );

@@ -1,30 +1,17 @@
-// import React from "react";
+import React, { useState, useEffect } from "react";
+import "./Care.css"
 
-// export const CareCard = ({ care }) => {
-//   return (
-//     <div className="care-card">
-//       <h3>Their Care:</h3>
-//       <p>Description: {care.descrip}</p>
-//       <p>Vet: {care.vet}</p>
-//       <p>Diet: {care.diet}</p>
-//       <p>Play: {care.play}</p>
-//       <p>Extra Information: {care.extra}</p>
-//     </div>
-//   );
-// };
-
-import React, { useState } from "react";
-
-export const CareCard = ({ care, isAdmin }) => {
+export const CareCard = ({ care, isAdmin, setAnimals }) => {
   const [isEditing, setIsEditing] = useState(false);
-  const [editedCare, setEditedCare] = useState({ ...care });
+  const [editedCare, setEditedCare] = useState({});
+
+useEffect(() => {
+  setEditedCare(care)
+}, [])
+
 
   const handleEdit = () => {
     setIsEditing(true);
-  };
-
-  const handleSave = () => {
-    setIsEditing(false);
   };
 
   const handleCancel = () => {
@@ -32,8 +19,51 @@ export const CareCard = ({ care, isAdmin }) => {
   };
 
   const handleDelete = () => {
-    console.log("Care details deleted");
-    setIsEditing(false);
+    fetch(`http://localhost:8088/cares/${care.id}`, {
+      method: "DELETE",
+    }).then(() => {
+      fetch(`http://localhost:8088/animals/${care.animalId}`, {
+        method: "DELETE",
+      })
+    })
+      .then(() => {
+        console.log("Care details deleted");
+        setIsEditing(false);
+        fetch(`http://localhost:8088/animals?_embed=cares`)
+          .then((response) => response.json())
+          .then((animalArray) => {
+            setAnimals(animalArray);
+          })
+          .catch((error) => {
+            console.error("Error updating animal list after care deletion:", error);
+          });
+      })
+      .catch((error) => {
+        console.error("Error deleting care details:", error);
+      });
+  };
+
+  const handleSaveButtonClick = (e) => {
+    e.preventDefault()
+   
+
+    fetch(`http://localhost:8088/cares/${care.id}`, {
+        method: "PUT",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(editedCare)
+    })
+
+        .then(response => response.json())
+        .then(() => {
+          setIsEditing(false);
+          return fetch(`http://localhost:8088/animals?_embed=cares`);
+        })
+        .then((response) => response.json())
+        .then((animalArray) => {
+          setAnimals(animalArray);
+        })
   }
 
   const handleChange = (e) => {
@@ -94,20 +124,24 @@ export const CareCard = ({ care, isAdmin }) => {
               onChange={handleChange}
             />
           </label>
-          <button onClick={handleSave}>Save</button>
-          <button onClick={handleCancel}>Cancel</button>
-          <button onClick={handleDelete}>Delete</button>
+          <button className= "btn-save" onClick={handleSaveButtonClick}>Save</button>
+          <button className="btn-cancel" onClick={handleCancel}>Cancel</button>
+          <button className="btn-delete" onClick={handleDelete}>Delete</button>
         </>
       ) : (
         <>
-          <h3>Their Care:</h3>
-          <p>Description: {care?.descrip}</p>
-          <p>Vet: {care?.vet}</p>
-          <p>Diet: {care?.diet}</p>
-          <p>Play: {care?.play}</p>
-          <p>Extra Information: {care?.extra}</p>
+          { care && (
+            <>
+          <p><span className="info-label">Description:</span> {care?.descrip}</p>
+          <p><span className="info-label">Vet:</span> {care?.vet}</p>
+          <p><span className="info-label">Diet:</span> {care?.diet}</p>
+          <p><span className="info-label">Play:</span> {care?.play}</p>
+          <p><span className="info-label">Extra Information:</span> {care?.extra}</p>
+          </>
+          )}
+          <br />
           {isAdmin && (
-            <button onClick={handleEdit}>Edit</button>
+            <button className="btn-edit" onClick={handleEdit}>Edit</button>
           )}
         </>
       )}

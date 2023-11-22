@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react"
 import { Link, useNavigate } from "react-router-dom"
-import { NavBar } from "../nav/NavBar"
 
 export const AnimalForm = ({ state, update }) => {
   
@@ -41,10 +40,10 @@ export const AnimalForm = ({ state, update }) => {
         })
 
             .then(response => response.json())
-            .then(() => {
-                setAnimal({
-                    name: "",
-                });
+            .then((animal) => {
+                // setAnimal({
+                //     name: "",
+                // });
             })
             .then(() => {
                 navigate("/");

@@ -1,16 +1,20 @@
-import { useState } from "react"
-import { AnimalList } from "./AnimalList"
-import { AnimalForm } from "./AnimalForm"
-import { CareCard } from "../care/CareCard"
+import { useState } from "react";
+import { CareCard } from "../care/CareCard";
 
-export const AnimalCard = ({animal}) => {
-    const [state, update] = useState("")
-    
-    return (
-        <>
-            <p>{animal.name}</p>
+export const AnimalCard = ({ animal, isAdmin, setAnimals }) => {
+  const [state, update] = useState("");
 
-         <CareCard care={animal.cares[0]} />
-        </>
-    )
-}
+  return (
+    <>
+      <div className="titles">
+        <p>{animal.name}</p>
+      </div>
+
+      {animal.cares && animal.cares.length > 0 ? (
+        <CareCard care={animal.cares[0]} isAdmin={isAdmin} setAnimals={setAnimals} />
+      ) : (
+        <p>No care details available</p>
+      )}
+    </>
+  );
+};

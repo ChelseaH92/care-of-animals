@@ -1,4 +1,4 @@
-.container--login {
+.account-card {
     height: 100vh;
     display: grid; 
     align-items: center; 
@@ -8,23 +8,22 @@
     border-radius: 5px;
     height: 200px;
     width: 25%;
-    margin: 10px auto;
-}
-
-.form--login {
+    margin: 10px auto;    
     display: grid; 
     align-items: center; 
     justify-content: center;
     text-align: center;
-    font-weight: bold;
 }
 
-.form--login h1 {
+.account-card h1 {
     font-weight: bold;
-    font-size: x-large;
-    text-decoration-line: underline
+    font-size: xx-large;
 }
 
-.link--register{
-    text-align: center;
+.name-card {
+    font-weight: bold;
+} 
+
+.email-card {
+    font-weight: bold;
 }

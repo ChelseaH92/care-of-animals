@@ -1,0 +1,89 @@
+.suggestion-box {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #eefff8;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+.admin-suggestions {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #eefff8;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+  
+  .suggestion-box h2 {
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+  }
+
+  .admin-suggestions h3 {
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .suggestion-box form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .admin-suggestions form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .suggestion-box label {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .suggestion-box input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .suggestion-box button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .suggestion-box button:hover {
+    background-color: #45a049;
+  }
+
+  .approve-btn {
+      background-color: #333;
+      color: #bbffe3;
+      border-radius: 8px;
+  }
+
+  .deny-btn {
+    background-color: #333;
+    color: #bbffe3;
+    border-radius: 8px;
+}
+  

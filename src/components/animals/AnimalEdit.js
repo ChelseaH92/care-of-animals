@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react"
 import { useNavigate, useParams } from "react-router-dom"
-// import { NavBar } from "../nav/NavBar"
 import { getAnimalById, updateAnimal } from "./api/database.json"
 
 export const EditAnimalForm = () => {
@@ -59,7 +58,7 @@ export const EditAnimalForm = () => {
               <div className="alignRight">
                 <button
                   type="button" disabled={isLoading}
-                  onClick={updateExistingArticle}
+                  onClick={updateExistingAnimal}
                   className="btn btn-primary"
                 >Submit</button>
               </div>

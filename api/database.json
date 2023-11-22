@@ -57,7 +57,7 @@
     {
       "id": 1,
       "animalId": 1,
-      "descrip": "A brief overview of all furry canines. They are omnivores who are considered 'human's best friend'.",
+      "descrip": "A brief overview of all furry canines. They are omnivores who are considered 'human's best friend'",
       "vet": "Vet visits are recommended at least once a year for annual check-ups, plus additional visits depending on each dog's individual health needs and emergencies.",
       "diet": "Depending on owner's budget and level of boujee, dogs can have their own homecooked meals with a balance of grains, vegetables, and raw or cooked meat or bags of non-grainfree food from a pet store. When choosing a food, it is important to look at the ingredients and to research which food will benefit the dog the most.",
       "play": "Depending on the breed, some dogs will need more exercise from others. Chihuahuas are more likely to need couch cuddles while Huskies need as much exercise as possible to get their energy out. Training is also a must for every breed for both good manners around other dogs and humans and for mental stimulation.",
@@ -81,5 +81,6 @@
       "play": "Russian Tortoises don't exactly need 'playtime', but weekly soaks to keep their shell and skin healthy, give them an extra source of water to ingest, and promote bowel movements are recommended. Be sure to pay attention to the tortoise and where the water level is as they cannot save themselves if they somehow turn over on their back or submerge themselves.",
       "extra": "It's important to note that tortoises vary vastly by species. A Box Turtle or a Red-Footed Tortoise will have very different dietary needs than a Russian Tortoise. A wooden, moisture-resistant box with a screen lid is recommended for their enclosure as well as UV lights and warming lights to keep one side at 90 to 100 degrees fahrenheit and the other side cool."
     }
-  ]
+  ],
+  "suggestions": []
 }

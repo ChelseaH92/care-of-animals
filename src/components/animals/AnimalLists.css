@@ -1,0 +1,115 @@
+.canine-list {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #eefff8;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .canine-list h3 {
+    font-weight: bold;
+  }
+
+  .feline-list {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #eefff8;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .feline-list h3 {
+    font-weight: bold;
+  }
+
+  .reptile-list {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #eefff8;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .reptile-list h3 {
+    font-weight: bold;
+  }
+
+  .back-btn {
+    background-color: #333;
+    color: #bbffe3;
+    border-radius: 8px;
+  }
+
+  .all-animals {
+    background-color: #333;
+    color: #bbffe3;
+    border-radius: 8px;
+  }
+
+  .create-animal-modal {
+    font-weight: bold;
+  }
+
+  .create-animal-modal h3 {
+    font-weight: bold;
+  }
+
+  .create-animal-input {
+    font-weight: bold;
+  }
+
+  .animals-container {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.animals-container h3 {
+  font-weight: bold;
+  text-align: center;
+  font-size: x-large;
+}
+
+  .info-label {
+    font-weight: bold;
+  }
+
+  .titles {
+    font-weight: bold;
+    text-align: center;
+    text-decoration-line: underline;
+  }
+
+  .species {
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .animal-list-item {
+    margin: 5px;
+  }
+
+  .add-animal {
+    background-color: #333;
+    color: #bbffe3;
+    border-radius: 8px;
+  }
+
+  .save-btn {
+    background-color: #333;
+    color: #bbffe3;
+    border-radius: 8px;
+  }
+  
+  .cancel-btn {
+    background-color: #333;
+    color: #bbffe3;
+    border-radius: 8px;
+  }
+  
